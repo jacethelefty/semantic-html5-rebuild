@@ -5,12 +5,11 @@
   <title>airbnb Wireframe</title>
 </head>
 <body>
-
   <header>
     <h1>airbnb</h1>
     <nav>
+      <h6 class="hidden">Main Nav</h6>
       <ul>
-        <h6 class="hidden">Main Nav</h6>
         <a href="signup.html"><li>Sign Up</li></a>
         <a href="login.html"><li>Log In</li></a>
         <a href="help.html"><li>Help</li></a>
@@ -18,107 +17,86 @@
       </ul>
     </nav>
   </header>
-
   <main>
     <section roll="banner">
       <h1>WELCOME HOME</h1>
       <h4>Rent unique places to stay from local hosts in 190+ countries!</h4>
       <a href="discover/howItWorks.html"><button>How It Works</button></a>
-
-      <article roll="search">
-        <form action="search">
-          <input type="text" placeholder="Where do you want to go?" size="40">
-          <input type="date" placeholder="Check In" size="10">
-          <input type="date" placeholder="Check Out" size="10">
-          <select name="guestCount">
-            <option value="1">1 Guest</option>
-            <option value="2">2 Guests</option>
-            <option value="3">3 Guests</option>
-            <option value="4">4 Guests</option>
-            <option value="5">5 Guests</option>
-            <option value="6">6+ Guests</option>
-          </select>
-          <button type="submit" value="Search"><h6 class="hidden">Search</h6></button>
-        </form>
-      </article>
+      <form>
+        <input type="text" placeholder="Where do you want to go?" size="40">
+        <input type="date" placeholder="Check In" size="10">
+        <input type="date" placeholder="Check Out" size="10">
+        <select name="guestCount">
+          <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5">5 Guests</option>
+          <option value="6">6+ Guests</option>
+        </select>
+        <button type="submit" value="Search"><h6>Search</h6></button>
+      </form>
     </section>
-
     <section>
       <h2>Most Popular in United States</h2>
       <p>Get insprired by destinations our travelers love.</p>
-      <a href="destinations/newyork.html"><div><h3><strong>New York</strong></h3></div></a>
-      <a href="destinations/sanfrancisco.html"><div><h3><strong>San Francisco</strong></h3></div></a>
-      <a href="destinations/losangeles.html"><div><h3><strong>Los Angeles</strong></h3></div></a>
+      <a href="destinations/newyork.html"><h3><strong>New York</strong></h3></a>
+      <a href="destinations/sanfrancisco.html"><h3><strong>San Francisco</strong></h3></a>
+      <a href="destinations/losangeles.html"><h3><strong>Los Angeles</strong></h3></a>
       <a href="destinations/destinations.html"><button>See All Destinations</button></a>
-
       <h2>Explore the World</h2>
       <p>See where people are traveling, all around the world.</p>
-      <a href="destinations/portland.html"><div><h3><strong>Portland</strong></h3></div></a>
-      <a href="destinations/portland/host00023.html"><div><h3><strong>Cynthia's Home</strong></h3><p>Portland</p><div><p>$145</p></div></div></a>
-
-      <a href="destinations/vancouver.html"><div><h3><strong>Vancouver</strong></h3></div></a>
-      <a href="destinations/paris.html"><div><h3><strong>Paris</strong></h3></div></a>
-      <a href="destinations/sandiego.html"><div><h3><strong>Get some sun in San Diego</strong></h3></div></a>
-
-      <a href="destinations/austin/host00345.html"><div><h3><strong>Susan's Home</strong></h3><p>Austin</p><div><p>$95</p></div></div></a>
-      <a href="destinations/austin.html"><div><h3><strong>Austin</strong></h3></div></a>
-
-      <a href="destinations/rome.html"><div><h3><strong>Rome</strong></h3></div></a>
-      <a href="destinations/chicago.html"><div><h3><strong>Chicago</strong></h3></div></a>
-      <a href="destinations/washington.html"><div><h3><strong>Sightsee in Washington</strong></h3></div></a>
+      <a href="destinations/portland.html"><h3><strong>Portland</strong></h3></a>
+      <a href="destinations/portland/host00023.html"><h3><strong>Cynthia's Home</strong></h3><p>Portland</p><p>$145</p></a>
+      <a href="destinations/vancouver.html"><h3><strong>Vancouver</strong></h3></a>
+      <a href="destinations/paris.html"><h3><strong>Paris</strong></h3></a>
+      <a href="destinations/sandiego.html"><h3><strong>Get some sun in San Diego</strong></h3></a>
+      <a href="destinations/austin/host00345.html"><h3><strong>Susan's Home</strong></h3><p>Austin</p><div><p>$95</p></a>
+      <a href="destinations/austin.html"><h3><strong>Austin</strong></h3></a>
+      <a href="destinations/rome.html"><h3><strong>Rome</strong></h3></a>
+      <a href="destinations/chicago.html"><h3><strong>Chicago</strong></h3></a>
+      <a href="destinations/washington.html"><h3><strong>Sightsee in Washington</strong></h3></a>
     </section>
-
     <section roll="slider">
-      <div>
-        <video src="whatisairbnb.mp4">
+      <div class="videoholder" id="slide1">
           <h2>BELONG ANYWHERE</h2>
           <h3>See how Airbnb hosts creates a sense of belonging around the world</h3>
-        </video>
       </div>
-
-      <div>
-        <video src="belo.mp4">
+      <div class="videoholder" id="slide2">
           <h2>INTRODUCING THE BELO</h2>
           <h3>The story of a symbol of belonging.</h3>
-        </video>
       </div>
-
-      <div>
+      <div id="slide3">
         <h2>Make Airbnb Yours</h2>
         <h3>Create your Symbol, Tell your Story</h3>
       </div>
     </section>
-
     <section>
       <h2>Our Community</h2>
-
-      <div>
-        <div>
-          <h3><strong>#OneLessStranger</strong></h3>
-          <p>We believe in a world where all seven billion of us can belong anywhere, #OneLessStranger at a time.</p>
-        </div>
-      </div>
-      <div>
-        <div><p>Traveling</p></div>
+      <section>
+        <h3><strong>#OneLessStranger</strong></h3>
+        <p>We believe in a world where all seven billion of us can belong anywhere, #OneLessStranger at a time.</p>
+      </section>
+      <setion>
+        <p>Traveling</p>
         <h3><strong>Alice &amp Chris</strong></h3>
         <p>Across an ocean or across a town, Alice &amp Chris are always in search of local experiences.</p>
         <a href="discover/learnmore.html"><p>Learn More about travel on Airbnb.</p></a>
-      </div>
-      <div>
+      </section>
+      <section>
         <h3>A World of Belonging</h3>
         <p>On New Year's Eve 2014, more than half a million people stayed on Airbnb.</p>
         <a href="hosting/seewho.html"><p>See who is staying tonight.</p></a>
-      </div>
-      <div>
+      </section>
+      <section>
         <h3><strong>Nina</strong></h3>
         <p>A professional photographer, Nina loves helping guests explore Shanghai's arts scene.</p>
         <a href="hosting/hosting.html"><p>Learn more about hosting on Airbnb.</p></a>
-      </div>
+      </section>
     </section>
   </main>
-
   <footer>
-    <div>
+    <section>
       <select name="language">
         <option value="1">Dutch</option>
         <option value="2">English</option>
@@ -129,8 +107,8 @@
         <option value="2">USD</option>
         <option value="3">TooManyToListAll</option>
       </select>
-    </div>
-    <div>
+    </section>
+    <section>
       <h5>Company</h5>
       <ul>
         <a href="company/about.html"><li>About</li></a>
@@ -142,8 +120,8 @@
         <a href="company/disasterResponse.html"><li>Disaster Response</li></a>
         <a href="company/termsPrivacy.html"><li>Terms &amp Privacy</li></a>
       </ul>
-    </div>
-    <div>
+    </section>
+    <section>
       <h5>Discover</h5>
       <ul>
         <a href="discover/trustSafety.html"><li>Trust &amp Safety</li></a>
@@ -154,8 +132,8 @@
         <a href="discover/businessTravel.html"><li>Business Travel</li></a>
         <a href="discover/siteMap.html"><li>Site Map</li></a>
       </ul>
-    </div>
-    <div>
+    </section>
+    <section>
       <h5>Hosting</h5>
       <ul>
         <a href="hosting/whyHost.html"><li>Why Host</li></a>
@@ -164,9 +142,8 @@
         <a href="hosting/homeSafety.html"><li>Home Safety</li></a>
         <a href="hosting/stories.html"><li>Stories</li></a>
       </ul>
-    </div>
-    <hr>
-    <div>
+    </section>
+    <section>
       <h5>Join Us On</h5>
       <ul>
         <a href="https://www.facebook.com/airbnb"><li><img src="imgs/facebook.png" alt="Facebook"></li></a>
@@ -178,8 +155,7 @@
         <a href="https://www.instagram.com/airbnb"><li><img src="imgs/instagram.png" alt="Instagram"></li></a>
       </ul>
       <p>&copy Airbnb. Inc.</p>
-    </div>
+    </section>
   </footer>
-
 </body>
 </html>
